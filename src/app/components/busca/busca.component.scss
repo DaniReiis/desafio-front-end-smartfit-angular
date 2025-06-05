@@ -1,0 +1,65 @@
+@use '../../../styles/variable' as *; // para usar variáveis
+
+.section-busca{
+    .titulo{
+        color: $primary;
+        position: relative;
+        
+        
+        &::after{
+            position: absolute;
+            content: '';
+            width: 35%;
+            height: 10px;
+            background: $primary;
+            bottom: -21px;
+            left: 3px;
+        }
+    }
+
+    .form-buscar{
+        border: 3px solid $terciary;
+        border-radius: 15px;
+
+        h2{
+            color: #808080;
+        }
+
+        .bi-clock{
+            color: $secondary !important;
+            font-size: 25px;
+        }
+
+        button{
+            max-width: 22rem;
+        }
+
+        .button-form{
+            padding: 7px 0px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 700;
+            color: black;
+        }
+
+        .btn-amarelo{
+            border: 3px solid $secondary;
+            background-color: $secondary;
+        }
+
+        .btn-branco{
+            border: 3px solid $terciary;
+            background-color: white;
+        }
+
+        .border-gray{
+            border-bottom: 2px solid $terciary;
+        }
+
+        .form-check{
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
